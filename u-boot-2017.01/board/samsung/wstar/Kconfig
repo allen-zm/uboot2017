@@ -1,0 +1,19 @@
+#这个是等下make menuconfig 指定的一个宏
+if TARGET_WSTAR  
+
+#指定你的board 文件夹的名称
+config SYS_BOARD
+	default "wstar"
+
+config SYS_VENDOR
+	default "samsung"
+	
+#指定你的芯片的类型
+config SYS_SOC
+	default "s5pc1xx"
+
+#指定你的 include/configs/wstar.h 为配置头文件
+config SYS_CONFIG_NAME
+	default "wstar"
+
+endif

@@ -11,7 +11,12 @@ config TARGET_S5P_GONI
 config TARGET_SMDKC100
 	bool "Support smdkc100 board"
 	select OF_CONTROL
-
+	
+#增加一块板
+config TARGET_WSTAR
+	bool "Support wstar board"
+	select OF_CONTROL
+	
 endchoice
 
 config SYS_SOC
@@ -19,5 +24,6 @@ config SYS_SOC
 
 source "board/samsung/goni/Kconfig"
 source "board/samsung/smdkc100/Kconfig"
+source "board/samsung/wstar/Kconfig"
 
 endif
