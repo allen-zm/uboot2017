@@ -68,8 +68,7 @@ obj-y	+= lowlevel_init.o
 
 source "board/Samsung/wsat/Kconfig"
 
-
-
+这时候如果make的话会报没有dts的错误
 
 
 
